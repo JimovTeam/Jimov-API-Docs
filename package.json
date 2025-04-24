@@ -17,5 +17,8 @@
     "@types/node": "^20.6.3",
     "eslint": "^8.49.0",
     "nuxt": "^3.8.0"
+  },
+  "dependencies": {
+    "@rollup/rollup-win32-x64-msvc": "^4.40.0"
   }
 }
