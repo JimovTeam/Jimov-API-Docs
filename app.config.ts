@@ -1,4 +1,8 @@
 export default defineAppConfig({
+  assistant: {
+    floatingInput: false,
+    explainWithAi: false
+  },
   ui: {
      colors: {
        primary: 'purple',
@@ -17,6 +21,7 @@ export default defineAppConfig({
       owner: 'MediaScout',
       branch: 'main',
     },
+  
   },
   header: {
     title: 'JIMOV API',
