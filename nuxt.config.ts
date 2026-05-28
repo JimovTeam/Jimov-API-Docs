@@ -1,5 +1,12 @@
 export default defineNuxtConfig({
   extends: ['docus'],
+  aiReady: {
+     contentSignal: {
+       search: true,
+       aiInput: false,
+       aiTrain: false
+     }
+  },
   vite: {
      optimizeDeps: {
        include: [
