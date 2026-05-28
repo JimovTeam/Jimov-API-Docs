@@ -1,11 +1,20 @@
 export default defineNuxtConfig({
-  // https://github.com/nuxt-themes/docus
-  extends: '@nuxt-themes/docus',
-
-  modules: [
-    // https://github.com/nuxt-modules/plausible
-    '@nuxtjs/plausible',
-    // https://github.com/nuxt/devtools
-    '@nuxt/devtools'
-  ]
+  extends: ['docus'],
+  vite: {
+     optimizeDeps: {
+       include: [
+         '@vue/devtools-core',
+         '@vue/devtools-kit',
+       ]
+     }
+  },
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          langs: ['bash', 'json', 'js', 'ts', 'shell', 'mdc', 'md', 'yaml', 'python', 'javascript'],
+        },
+      },
+    },
+  },
 })

@@ -1,41 +1,34 @@
 export default defineAppConfig({
+  ui: {
+     colors: {
+       primary: 'purple',
+       neutral: 'zinc'
+     }
+   },
   docus: {
-    title: "JIMOV",
-    description:
-      "This project is an open-source API for retrieving multimedia content such as anime, movies and series, news, and manga in both Spanish and English.",
-    image:
-      "https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png",
+    title: 'JIMOV',
+    description: 'This project is an open-source API for retrieving multimedia content such as anime, movies and series, news, and manga in both Spanish and English.',
     socials: {
-      github: "koikiss-dev/jimov_api",
-    },
-
-    aside: {
-      level: 0,
-      collapsed: false,
-      exclude: [],
-    },
-    main: {
-      padded: true,
-      fluid: true,
-    },
-    header: {
-      logo: false,
-      showLinkIcon: true,
-      exclude: [],
-      fluid: true,
-    },
-    footer: {
-      credits: {
-        text: "Discord",
-        href: "https://discord.com/invite/tyZ39GCX7R",
-        icon: "",
-      },
+      github: 'koikiss-dev/jimov_api',
     },
     github: {
       edit: true,
-      repo: "Jimov-API-Docs",
-      owner: "MediaScout",
-      branch: "main",
+      repo: 'Jimov-API-Docs',
+      owner: 'MediaScout',
+      branch: 'main',
     },
   },
-});
+  header: {
+    title: 'JIMOV API',
+    logo: {
+      light: '/logo/logo-light.svg',
+      dark: '/logo/logo-dark.svg',
+      class: 'h-10',
+      alt: 'JIMOV API Logo',
+    },
+  },
+  seo: {
+    title: 'JIMOV API',
+    description: 'Open-source API for retrieving multimedia content such as anime, movies and series, news, and manga in both Spanish and English.',
+  },
+})

@@ -1,9 +1,3 @@
 <template>
-  <span>JIMOV</span>
+  <img src="/JIMOV API.svg" alt="JIMOV" class="h-8" />
 </template>
-
-<style>
-span {
-  font-weight: 400;
-}
-</style>
